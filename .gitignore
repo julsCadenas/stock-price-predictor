@@ -1,7 +1,6 @@
 .env
 .venv
 
-notebooks/drafts.ipynb
 todo.md
 test.py
 main.py
