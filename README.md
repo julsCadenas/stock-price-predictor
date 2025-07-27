@@ -74,3 +74,7 @@ model.compile(optimizer=optimizer, loss=Huber(delta=1.0))
 - Experiment with other sentiment models (FinBERT, financial BERT variants)
 - Add more features like RSI, MACD, and volume spikes
 - Build an interactive dashboard to visualize predictions
+
+## **⚖️ License**
+
+This project is licensed under the [MIT License](LICENSE).
