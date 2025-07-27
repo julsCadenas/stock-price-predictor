@@ -1,0 +1,17 @@
+{
+  "feature_columns": [
+    "High",
+    "Low",
+    "Open",
+    "Volume",
+    "avg_sentiment_score",
+    "news_count"
+  ],
+  "target_column": "Close",
+  "input_shape": [
+    30,
+    6
+  ],
+  "sequence_length": 30,
+  "n_features": 6
+}
