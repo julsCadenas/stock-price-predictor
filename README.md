@@ -1,5 +1,4 @@
 # **📈 Stock Price Prediction with News Sentiment**
-Predict Apple (AAPL) stock prices using historical prices + news sentiment with deep learning (LSTM & GRU). GRU achieved Test R² 0.9338, RMSE 4.53, outperforming the LSTM baseline.
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange?logo=tensorflow)
@@ -7,8 +6,6 @@ Predict Apple (AAPL) stock prices using historical prices + news sentiment with 
 ![Jupyter](https://img.shields.io/badge/Notebook-Jupyter-F37626?logo=jupyter)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/status-stable--improving-yellowgreen.svg)
-
-**GRU Test Performance:** RMSE: 4.53 ✅ | MAE: 3.50 ✅ | R²: 0.9338 ✅ | MAPE: 1.60% ✅
 
 A deep learning project predicting Apple’s stock prices by combining historical stock data with sentiment analysis of real-world news headlines. Built using **TensorFlow/Keras**, Hugging Face Transformers, and **GRU neural networks**.
 
