@@ -55,6 +55,8 @@ I experimented with **LSTM** and **GRU** models to predict Apple stock prices fr
 
 ### **GRU Model (Current Best)**
 
+**Notebook:** [Click here](https://github.com/julsCadenas/stock-price-predictor/blob/main/notebooks/train_gru.ipynb)
+
 ![Actual vs. Predicted Stock Prices](misc/gru_output_cropped.png)
 
 ```python
@@ -97,6 +99,8 @@ def build_gru_model(hp):
 ---
 
 ### **LSTM Model (Baseline)**
+
+**Notebook:** [Click here](https://github.com/julsCadenas/stock-price-predictor/blob/main/notebooks/train.ipynb)
 
 ![Actual vs. Predicted Stock Prices](misc/output.png)
 
