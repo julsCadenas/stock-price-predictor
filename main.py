@@ -46,13 +46,20 @@ sample_range = st.slider(
 )
 
 # get indices
-start_idx = sequence_dates[sequence_dates == sample_range[0]].index[0]
-end_idx = sequence_dates[sequence_dates == sample_range[1]].index[0]
+# Convert to numpy array for searchsorted
+sequence_dates_np = sequence_dates.to_numpy()
 
-X_sample = X[start_idx:end_idx+1]
-y_sample = y[start_idx:end_idx+1]
-selected_dates = dates_for_sequences[start_idx:end_idx+1]
+# Find the closest indices for slider selection
+start_idx = np.searchsorted(sequence_dates_np, sample_range[0], side="left")
+end_idx = np.searchsorted(sequence_dates_np, sample_range[1], side="right") - 1
 
+# Ensure indices are within bounds
+start_idx = max(0, min(start_idx, len(sequence_dates_np) - 1))
+end_idx = max(0, min(end_idx, len(sequence_dates_np) - 1))
+
+X_sample = X[start_idx:end_idx + 1]
+y_sample = y[start_idx:end_idx + 1]
+selected_dates = dates_for_sequences[start_idx:end_idx + 1]
 
 # ===========================
 # Make Predictions
