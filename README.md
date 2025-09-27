@@ -36,6 +36,24 @@ A deep learning project predicting Apple’s stock prices by combining historica
 
 ---
 
+## **💾 Artifacts & Streamlit Dashboard**
+
+- All trained models, scalers, and necessary artifacts are saved in the notebooks/ folder.
+```bash
+notebooks/
+├── artifacts/          # General artifacts (scalers, encoders, etc.)
+├── gru_output/         # Best performing GRU model
+├── model_outputs/      # Other model outputs (LSTM)
+├── tuner_dir/          # Keras Tuner directories
+└── tuner_results/      # Keras Tuner results
+```
+- For an interactive Streamlit dashboard run:
+```bash
+python -m venv .venv            # create virtual environment (Recommended)
+pip install -r requirements.txt # install dependencies
+streamlit run main.py           # run streamlit app
+```
+
 ## **📊 Model Comparison: LSTM vs GRU**
 
 | Metric   | LSTM Test | GRU Test | Better? |
