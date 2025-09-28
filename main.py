@@ -87,3 +87,10 @@ if st.checkbox("Show Data Table"):
     st.dataframe(df_plot)
 
 st.success("Predictions complete!")
+
+# ===========================
+# Full Dataset Table
+# ===========================
+st.subheader("Full Dataset")
+# if st.checkbox("Show Full Dataset"):
+st.dataframe(df)
